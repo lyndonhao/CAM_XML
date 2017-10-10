@@ -24,7 +24,7 @@ namespace XmlTools
             return true;
         }
 
-       
+
         /// <summary>
         /// 添加元素，带属性，一个
         /// </summary>
@@ -34,7 +34,7 @@ namespace XmlTools
         public static void createTable(string fileName, string attributeName, string attributeValue)
         {
             xmlWriter.WriteStartElement(fileName);
-            xmlWriter.WriteAttributeString(attributeName, attributeValue);          
+            xmlWriter.WriteAttributeString(attributeName, attributeValue);
         }
 
 
@@ -51,7 +51,7 @@ namespace XmlTools
             for (int i = 0; i < attributeName.Length; i++)
             {
                 xmlWriter.WriteAttributeString(attributeName[i], attributeValue[i]);
-            } 
+            }
         }
 
 
@@ -68,8 +68,13 @@ namespace XmlTools
             xmlWriter.WriteStartElement(fileName);
             xmlWriter.WriteAttributeString(attributeName, attributeValue);
             xmlWriter.WriteAttributeString(attributeName1, attributeValue1);
-        }
 
+        }
+        public static void AddAttribute(string attributeName, string attributeValue)
+        {
+
+            xmlWriter.WriteAttributeString(attributeName, attributeValue);
+        }
 
         /// <summary>
         /// 添加空白（default）

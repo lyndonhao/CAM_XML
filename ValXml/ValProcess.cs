@@ -7,7 +7,7 @@ using System.Windows.Forms;
 //using ValDataProcess;
 using XmlTools;
 
-//using FileTools;
+using FileTools;
 //using CAMProcess;
 
 

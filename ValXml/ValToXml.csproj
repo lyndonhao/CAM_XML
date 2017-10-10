@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileTools\fileDialog.cs" />
     <Compile Include="ValAttribute.cs" />
     <Compile Include="ValProcess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
